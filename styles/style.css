@@ -1,5 +1,109 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--bg-color);
+  font-size: var(--main-font-size);
+}
+
+.header {
+  background-color: var(--bg-color);
+  background-image: url('../images/cover-image-dark.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--block-side-dist);
+  display: grid;
+  grid-template-rows: auto max-content auto;
+}
+
+.decorated-zone {
+  min-block-size: 768px;
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute; 
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  bottom: 20px;
+  left: 20px;
+}
+
+.rec {
+  color: var(--accent-color);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 30px;
+  inset-block-start: 20px;
+}
+
+.rec::after {
+  content: "";
+  background-color: var(--accent-color);
+  display: block;
+  border-radius: 100%;
+  block-size: 9px;
+  inline-size: 9px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  font-weight: 400;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color-with-opacity);
+  margin-bottom: -1px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color-with-opacity);
+}
+
+.header__heading {
+  font-size: 157px;
+  margin: 0 0 0 -20px;
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title-decore {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-weight: bold;
+  max-width: 491px;
+  height: fit-content;
+  justify-self: flex-end;
+  align-self: center;
 }

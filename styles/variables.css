@@ -2,3 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --interblock-interval: 80px;
+  --block-side-dist: 20px;
+  --accent-font-size: 120px;
+  --main-font: 'IBM Plex mono';
+  --main-font-size: 18px;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-text-color: transparrent;
+  --accent-color: #FF0070;
+  --accent-color-with-opacity: rgb(255, 0, 112, .4);
+  --heading-color: #DB00FF;
+}
