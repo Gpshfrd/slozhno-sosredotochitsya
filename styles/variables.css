@@ -4,7 +4,7 @@
 */
 :root {
   --interblock-interval: 80px;
-  --block-side-dist: 20px;
+  --block-side-dist: 10px;
   --accent-font-size: 120px;
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
