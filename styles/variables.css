@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --interblock-interval: 80px;
+  --interblock-interval: 60px;
   --block-side-dist: 10px;
   --accent-font-size: 120px;
   --main-font: 'IBM Plex mono';
@@ -14,4 +14,10 @@
   --accent-color: #FF0070;
   --accent-color-with-opacity: rgb(255, 0, 112, .4);
   --heading-color: #DB00FF;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --block-side-dist: 20px;
+  }
 }
