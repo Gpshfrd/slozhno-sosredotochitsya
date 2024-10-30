@@ -10,8 +10,9 @@
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
   --main-line-height: 23.4px;
+  --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --decore-text-color: #000028;
   --accent-text-color: transparent;
   --accent-color: #FF0070;
   --accent-color-with-opacity: rgb(255, 0, 112, .4);

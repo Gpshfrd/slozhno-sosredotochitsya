@@ -5,7 +5,7 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: var(--main-font-size);
-  background-image: url('../images/cover-image-dark.png');
+  background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@
 }
 
 .rec {
-  color: var(--accent-color);
+  color: var(--rec-color);
   display: flex;
   position: absolute;
   align-items: center;
@@ -72,12 +72,12 @@
 
 .rec::after {
   content: "";
-  background-color: var(--accent-color);
+  background-color: var(--rec-color);
   display: block;
   border-radius: 100%;
   block-size: 9px;
   inline-size: 9px;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--rec-color);
 }
 
 .header__theme-menu {
@@ -139,7 +139,7 @@
 
 .header__heading {
   color: var(--heading-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-bg-color);
   line-height: 82.5%;
 }
 
@@ -163,8 +163,9 @@
 }
 
 .title-decore {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
+  display: flex;
+  background-color: var(--accent-bg-color);
+  color: var(--decore-text-color);
   font-weight: bold;
   height: fit-content;
   justify-self: flex-end;
@@ -188,14 +189,23 @@
   margin-block-start: var(--intersection-interval);
 }
 
-.main__two-columns-section {
-  display: grid;
-  grid-template-columns: 1.5fr 3fr;
+@media (min-width: 768px) {
+  .main__two-columns-section {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+  }
 }
 
-/* .main__one-column-section {
+.main__three-columns-list {
+  display: grid;
+  gap: var(--textblock-margin);
+}
 
-} */
+@media (min-width: 1024px) {
+  .main__three-columns-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .main__section-heading {
   font-size: var(--main-font-size);
@@ -217,12 +227,22 @@
 
   .main__section-heading {
     padding-inline-end: var(--textblock-margin);
+    max-inline-size: 236px;
   }
 }
 
+@media (min-width: 1024px) {
+  .main__section-heading {
+    max-inline-size: 315px;
+  }
+}
 .main__text {
   margin-block-start: var(--block-side-dist);
   line-height: var(--main-line-height);
+}
+
+.link {
+  text-shadow: 2px 2px 0 var(--accent-bg-color);
 }
 
 .title-decore.h3{
@@ -249,7 +269,7 @@
 
 .footer__heading {
   color: var(--heading-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-bg-color);
   line-height: 82.5%;
 }
 

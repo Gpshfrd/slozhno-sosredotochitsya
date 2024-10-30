@@ -5,12 +5,32 @@
 */
 
 :root {
-  
+  --page-padding: 10px;
+  --intersection-interval: 50px;
+  --textblock-margin: 20px;
+  --block-side-dist: 10px;
+  --main-font: 'IBM Plex mono';
+  --main-font-size: 18px;
+  --main-line-height: 23.4px;
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-text-color: transparent;
+  --accent-color: #FF0070;
+  --rec-color: #FF0070;
+  --accent-color-with-opacity: rgb(255, 0, 112, .4);
+  --heading-color: #DB00FF;
+  --accent-bg-color: #FF0070;
 }
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #FFC2E6;
+  --text-color: #353430;
+  --decore-text-color: #353430;
+  --accent-color: rgb(53, 52, 48);
+  --accent-color-with-opacity: rgb(53, 52, 48, .4);
+  --heading-color: #FFC2E6;
+  --accent-bg-color: #FF8DCB;
+  --rec-color: transparent;
+  --bg-image: url('../images/cover-image-light.png');
 }
