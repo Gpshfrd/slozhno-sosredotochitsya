@@ -10,8 +10,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: var(--block-side-dist);
+  padding: var(--page-padding);
 }
+
+/* header */
 
 .header {
   display: grid;
@@ -55,6 +57,7 @@
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 0;
+  inset-inline-start: 0;
 }
 
 .rec {
@@ -163,12 +166,101 @@
   background-color: var(--accent-color);
   color: var(--bg-color);
   font-weight: bold;
-  max-width: 491px;
   height: fit-content;
   justify-self: flex-end;
 }
+
 @media (max-width: 768px) {
-  .title-decore {
+  .title-decore:not(:first-of-type) {
     max-inline-size: 364px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-decore:not(:first-of-type) {
+    max-inline-size: 491px;
+  }
+}
+
+/* main */
+
+.main__section {
+  margin-block-start: var(--intersection-interval);
+}
+
+.main__two-columns-section {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+}
+
+/* .main__one-column-section {
+
+} */
+
+.main__section-heading {
+  font-size: var(--main-font-size);
+  color: var(--accent-color);
+}
+
+.main__textblock {
+  margin-block-start: var(--textblock-margin);
+}
+
+@media (min-width: 748px) {
+  .main__textblock:first-child {
+    margin: 0;
+  }
+  
+  .description {
+    margin-inline-start: var(--block-side-dist);
+  }
+
+  .main__section-heading {
+    padding-inline-end: var(--textblock-margin);
+  }
+}
+
+.main__text {
+  margin-block-start: var(--block-side-dist);
+  line-height: var(--main-line-height);
+}
+
+.title-decore.h3{
+  font-weight: normal;
+}
+
+.main__gallery {
+  margin-block-start: var(--intersection-interval);
+}
+
+.main__gallery-image {
+  width: 100%;
+  margin-block-start: var(--block-side-dist);
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  margin-block-start: var(--intersection-interval);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__heading {
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+}
+
+@media (max-width: 768px) {
+  .footer__heading {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

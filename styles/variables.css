@@ -3,14 +3,16 @@
   и их переопределение под различные устройства
 */
 :root {
-  --interblock-interval: 60px;
+  --page-padding: 10px;
+  --intersection-interval: 50px;
+  --textblock-margin: 20px;
   --block-side-dist: 10px;
-  --accent-font-size: 120px;
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
+  --main-line-height: 23.4px;
   --bg-color: #000028;
   --text-color: #F1B2CE;
-  --accent-text-color: transparrent;
+  --accent-text-color: transparent;
   --accent-color: #FF0070;
   --accent-color-with-opacity: rgb(255, 0, 112, .4);
   --heading-color: #DB00FF;
@@ -18,6 +20,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --block-side-dist: 20px;
+    --page-padding: 20px;
+    --intersection-interval: 80px;
   }
 }
