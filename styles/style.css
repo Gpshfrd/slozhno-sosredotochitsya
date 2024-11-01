@@ -16,6 +16,7 @@
 /* header */
 
 .header {
+  block-size: 100%;
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
@@ -254,7 +255,7 @@
   outline: 1px colid var(--text-color);
 }
 
-.title-decore.h3{
+.title-decore.h3 {
   font-weight: normal;
 }
 
