@@ -5,13 +5,6 @@
 */
 
 :root {
-  --page-padding: 10px;
-  --intersection-interval: 50px;
-  --textblock-margin: 20px;
-  --block-side-dist: 10px;
-  --main-font: 'IBM Plex mono';
-  --main-font-size: 18px;
-  --main-line-height: 23.4px;
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --text-color: #F1B2CE;

@@ -210,17 +210,16 @@
 .main__section-heading {
   font-size: var(--main-font-size);
   color: var(--accent-color);
+  margin-block-end: var(--textblock-margin);
 }
 
-.main__textblock {
-  margin-block-start: var(--textblock-margin);
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--textblock-margin);
 }
 
 @media (min-width: 748px) {
-  .main__textblock:first-child {
-    margin: 0;
-  }
-  
   .description {
     margin-inline-start: var(--block-side-dist);
   }
@@ -243,6 +242,16 @@
 
 .link {
   text-shadow: 2px 2px 0 var(--accent-bg-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--text-color);
+  margin-block-end: -1px;
+}
+
+.link:focus {
+  outline: 1px colid var(--text-color);
 }
 
 .title-decore.h3{
@@ -251,10 +260,50 @@
 
 .main__gallery {
   margin-block-start: var(--intersection-interval);
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-side-dist)
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+  }
+
+  .main__gallery-image:nth-child(1) {
+    grid-area: sunset;
+  }
+  
+  .main__gallery-image:nth-child(2) {
+    grid-area: ice-cream;
+  }
+  
+  .main__gallery-image:nth-child(3) {
+    grid-area: tape;
+  }
+  
+  .main__gallery-image:nth-child(4) {
+    grid-area: books;
+  }
+  
+  .main__gallery-image:nth-child(5) {
+    grid-area: street;
+  }
+
+  .main__gallery-images-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: "sunset sunset ice-cream" "tape books ice-cream" "tape street street";
+    gap: var(--textblock-margin);
+  }
+
 }
 
 .main__gallery-image {
-  width: 100%;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
   margin-block-start: var(--block-side-dist);
 }
 
