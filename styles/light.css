@@ -7,23 +7,23 @@
 :root {
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --accent-text-color: transparent;
-  --accent-color: #FF0070;
-  --rec-color: #FF0070;
-  --accent-color-with-opacity: rgb(255, 0, 112, .4);
-  --heading-color: #DB00FF;
-  --accent-bg-color: #FF0070;
+  --accent-color: #ff0070;
+  --rec-color: #ff0070;
+  --accent-color-with-opacity: rgb(255, 0, 112, 0.4);
+  --heading-color: #db00ff;
+  --accent-bg-color: #ff0070;
 }
 
 .page.theme_light {
-  --bg-color: #FFC2E6;
+  --bg-color: #ffc2e6;
   --text-color: #353430;
   --decore-text-color: #353430;
   --accent-color: rgb(53, 52, 48);
-  --accent-color-with-opacity: rgb(53, 52, 48, .4);
-  --heading-color: #FFC2E6;
-  --accent-bg-color: #FF8DCB;
+  --accent-color-with-opacity: rgb(53, 52, 48, 0.4);
+  --heading-color: #ffc2e6;
+  --accent-bg-color: #ff8dcb;
   --rec-color: transparent;
   --bg-image: url('../images/cover-image-light.png');
 }

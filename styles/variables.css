@@ -14,9 +14,9 @@
   --bg-color: #000028;
   --decore-text-color: #000028;
   --accent-text-color: transparent;
-  --accent-color: #FF0070;
-  --accent-color-with-opacity: rgb(255, 0, 112, .4);
-  --heading-color: #DB00FF;
+  --accent-color: #ff0070;
+  --accent-color-with-opacity: rgb(255, 0, 112, 0.4);
+  --heading-color: #db00ff;
 }
 
 @media (min-width: 768px) {
