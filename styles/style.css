@@ -105,9 +105,6 @@
 
   .header__theme-menu {
     align-self: flex-start;
-  }
-
-  .header__theme-menu {
     justify-self: center;
     margin: 0;
   }
@@ -314,6 +311,7 @@
   margin-block-start: var(--intersection-interval);
   justify-content: center;
   align-items: center;
+  block-size: 100%;
 }
 
 .footer__heading {
