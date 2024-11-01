@@ -24,18 +24,18 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
+  max-block-size: 97vh;
 }
 
 @media (min-width: 768px) {
   .decorated-zone {
-    min-block-size: 96vh;
+    max-block-size: 96vh;
   }
 }
 
 @media (min-width: 1024px) {
   .decorated-zone {
-    min-block-size: 95vh;
+    max-block-size: 95vh;
   }
 }
 
@@ -187,6 +187,12 @@
   margin-block-start: var(--intersection-interval);
 }
 
+.main__section-heading {
+  font-size: var(--main-font-size);
+  color: var(--accent-color);
+  margin-block-end: var(--textblock-margin);
+}
+
 @media (min-width: 768px) {
   .main__two-columns-section {
     display: grid;
@@ -205,12 +211,6 @@
   }
 }
 
-.main__section-heading {
-  font-size: var(--main-font-size);
-  color: var(--accent-color);
-  margin-block-end: var(--textblock-margin);
-}
-
 .description {
   display: flex;
   flex-direction: column;
@@ -223,7 +223,7 @@
   }
 
   .main__section-heading {
-    padding-inline-end: var(--textblock-margin);
+    padding-inline-end: 1px;
     max-inline-size: 236px;
   }
 }
@@ -236,6 +236,7 @@
 .main__text {
   margin-block-start: var(--block-side-dist);
   line-height: var(--main-line-height);
+  padding-inline-end: 1px;
 }
 
 .link {
@@ -260,7 +261,13 @@
   margin-block-start: var(--intersection-interval);
   display: flex;
   flex-direction: column;
-  gap: var(--block-side-dist);
+  gap: var(--page-padding);
+}
+
+.main__gallery-images-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-padding);
 }
 
 @media (min-width: 768px) {
@@ -293,7 +300,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, max-content);
     grid-template-areas: 'sunset sunset ice-cream' 'tape books ice-cream' 'tape street street';
-    gap: var(--textblock-margin);
   }
 }
 
@@ -301,7 +307,6 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  margin-block-start: var(--block-side-dist);
 }
 
 /* footer */
