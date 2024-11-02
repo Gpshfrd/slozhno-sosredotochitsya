@@ -3,19 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-:root {
-  --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-text-color: transparent;
-  --accent-color: #ff0070;
-  --rec-color: #ff0070;
-  --accent-color-with-opacity: rgb(255, 0, 112, 0.4);
-  --heading-color: #db00ff;
-  --accent-bg-color: #ff0070;
-}
-
 .page.theme_light {
   --bg-color: #ffc2e6;
   --text-color: #353430;

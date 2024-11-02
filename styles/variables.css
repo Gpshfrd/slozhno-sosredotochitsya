@@ -5,6 +5,7 @@
 :root {
   --page-padding: 10px;
   --intersection-interval: 50px;
+  --header-bottom-margin: 40px;
   --textblock-margin: 20px;
   --block-side-dist: 10px;
   --main-font: 'IBM Plex mono';
@@ -12,16 +13,20 @@
   --main-line-height: 23.4px;
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
+  --text-color: #f1b2ce;
   --decore-text-color: #000028;
   --accent-text-color: transparent;
   --accent-color: #ff0070;
+  --rec-color: #ff0070;
   --accent-color-with-opacity: rgb(255, 0, 112, 0.4);
   --heading-color: #db00ff;
+  --accent-bg-color: #ff0070;
 }
 
 @media (min-width: 768px) {
   :root {
     --page-padding: 20px;
     --intersection-interval: 80px;
+    --header-bottom-margin: 60px;
   }
 }
