@@ -330,7 +330,7 @@
 .footer__heading {
   color: var(--heading-color);
   text-shadow: 4px 4px 0 var(--accent-bg-color);
-  line-height: 82.5%;
+  line-height: var(--main-line-height);
 }
 
 @media (max-width: 768px) {
