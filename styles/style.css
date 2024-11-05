@@ -204,13 +204,11 @@
   .main__why-section {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    gap: var(--block-side-dist);
   }
 
   .main__how-section {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    gap: var(--block-side-dist);
   }
 }
 
@@ -220,6 +218,14 @@
 }
 
 @media (min-width: 1024px) {
+  .main__why-section {
+    gap: var(--block-side-dist);
+  }
+
+  .main__how-section {
+    gap: var(--block-side-dist);
+  }
+
   .main__what-list {
     grid-template-columns: repeat(3, 1fr);
   }
