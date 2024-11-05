@@ -159,6 +159,7 @@
   background-color: var(--accent-bg-color);
   color: var(--decore-text-color);
   font-weight: bold;
+  line-height: var(--main-line-height);
   height: fit-content;
   justify-self: flex-end;
 }
