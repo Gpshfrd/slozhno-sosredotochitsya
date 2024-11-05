@@ -5,7 +5,7 @@
 :root {
   --page-padding: 10px;
   --intersection-interval: 50px;
-  --header-bottom-margin: 40px;
+  --header-main-footer-gap: 40px;
   --textblock-margin: 20px;
   --block-side-dist: 10px;
   --main-font: 'IBM Plex mono';
@@ -27,6 +27,6 @@
   :root {
     --page-padding: 20px;
     --intersection-interval: 80px;
-    --header-bottom-margin: 60px;
+    --header-main-footer-gap: 60px;
   }
 }
