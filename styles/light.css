@@ -3,6 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+
 .page.theme_light {
   --bg-color: #ffc2e6;
   --text-color: #353430;
@@ -13,4 +14,18 @@
   --accent-bg-color: #ff8dcb;
   --rec-color: transparent;
   --bg-image: url('../images/cover-image-light.png');
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --bg-color: #ffc2e6;
+    --text-color: #353430;
+    --decore-text-color: #353430;
+    --current-color: rgb(53, 52, 48);
+    --current-color-with-opacity: rgb(53, 52, 48, 0.4);
+    --heading-color: #ffc2e6;
+    --accent-bg-color: #ff8dcb;
+    --rec-color: transparent;
+    --bg-image: url('../images/cover-image-light.png');
+  }
 }
