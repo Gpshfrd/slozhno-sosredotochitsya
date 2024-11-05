@@ -32,8 +32,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--current-color);
+  border-right: 1px solid var(--current-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: var(--page-padding);
@@ -43,8 +43,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--current-color);
+  border-left: 1px solid var(--current-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: var(--page-padding);
@@ -102,27 +102,23 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--current-color);
   padding: 1.5px 13px;
-}
-
-.header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
-  pointer-events: none;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--accent-color-with-opacity);
+  border-bottom: 1px solid var(--current-color-with-opacity);
   margin-bottom: -1px;
 }
 
-.header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color-with-opacity);
+.header__theme-menu-button_active {
+  outline: 1px solid var(--current-color);
+  pointer-events: none;
 }
 
-.header__theme-menu-button_active:hover {
-  pointer-events: none;
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--current-color-with-opacity);
 }
 
 .header__heading {
@@ -182,12 +178,17 @@
 
 .main__section-heading {
   font-size: var(--main-font-size);
-  color: var(--accent-color);
+  color: var(--current-color);
   margin-block-end: var(--textblock-margin);
 }
 
 @media (min-width: 768px) {
-  .main__two-columns-section {
+  .main__why-section {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+  }
+
+  .main__how-section {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
   }
@@ -246,7 +247,7 @@
   outline: 1px colid var(--text-color);
 }
 
-.title-decore.h3 {
+.title-decore.thin-title {
   font-weight: normal;
 }
 
