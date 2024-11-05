@@ -159,13 +159,13 @@
 }
 
 @media (max-width: 768px) {
-  .title-decore:not(:first-of-type) {
+  .header__title-decore {
     max-inline-size: 364px;
   }
 }
 
 @media (min-width: 1024px) {
-  .title-decore:not(:first-of-type) {
+  .header__title-decore {
     max-inline-size: 491px;
   }
 }
